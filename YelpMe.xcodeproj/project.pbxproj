@@ -20,6 +20,7 @@
 		3F6E9C5F1DD3E5C8004E8D5E /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E9C5E1DD3E5C8004E8D5E /* Coordinate.swift */; };
 		3F6E9C611DD3E626004E8D5E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E9C601DD3E626004E8D5E /* Location.swift */; };
 		3F6E9C631DD3E88D004E8D5E /* RootObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E9C621DD3E88D004E8D5E /* RootObject.swift */; };
+		3F6E9C651DD3EC76004E8D5E /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E9C641DD3EC76004E8D5E /* DBManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,7 @@
 		3F6E9C5E1DD3E5C8004E8D5E /* Coordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 		3F6E9C601DD3E626004E8D5E /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		3F6E9C621DD3E88D004E8D5E /* RootObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootObject.swift; sourceTree = "<group>"; };
+		3F6E9C641DD3EC76004E8D5E /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				3F6E9C621DD3E88D004E8D5E /* RootObject.swift */,
 				3F6E9C5E1DD3E5C8004E8D5E /* Coordinate.swift */,
 				3F6E9C601DD3E626004E8D5E /* Location.swift */,
+				3F6E9C641DD3EC76004E8D5E /* DBManager.swift */,
 			);
 			path = YelpMe;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				3F6E9BFF1DD3D112004E8D5E /* DetailViewController.swift in Sources */,
 				3F6E9BFD1DD3D112004E8D5E /* MasterViewController.swift in Sources */,
 				3F6E9BFB1DD3D112004E8D5E /* AppDelegate.swift in Sources */,
+				3F6E9C651DD3EC76004E8D5E /* DBManager.swift in Sources */,
 				3F6E9C5D1DD3E559004E8D5E /* Businesses.swift in Sources */,
 				3F6E9C611DD3E626004E8D5E /* Location.swift in Sources */,
 				3F6E9C5F1DD3E5C8004E8D5E /* Coordinate.swift in Sources */,
