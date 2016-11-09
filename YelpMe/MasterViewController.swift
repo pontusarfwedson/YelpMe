@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import SQLite
 
 class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
     var objects = [Any]()
+    
+    //DATABASE VARIABLES
+    
 
 
     override func viewDidLoad() {
@@ -25,6 +29,11 @@ class MasterViewController: UITableViewController {
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
+        
+        //DATABASE
+        
+        readFromDb()
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -78,6 +87,61 @@ class MasterViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
+    }
+    
+    func readFromDb(){
+        let path = NSSearchPathForDirectoriesInDomains(
+            .documentDirectory, .userDomainMask, true
+            ).first!
+        
+        
+        var db : Connection?
+        do{
+            print("Connecting to DB...")
+            db = try Connection("\(path)/db.sqlite3")
+        }catch{
+            print("Could not connect to DB")
+        }
+        
+        db!.busyTimeout = 5
+        let users = Table("users")
+        let email = Expression<String>("email")
+        
+        let name = Expression<String?>("name")
+        let id = Expression<Int64>("id")
+        
+        
+        do{
+            print("Creating Users table ...")
+            try db!.run(users.create { t in
+                t.column(id, primaryKey: true)
+                t.column(name)
+                t.column(email, unique: true)
+            })
+        }catch{
+            print("Could not create users table. Existing?")
+        }
+        
+        
+        do{
+            print("Inserting Nisse ..")
+            let insert = users.insert(name <- "Nisse", email <- "nisse@mac.com")
+            let rowid = try db!.run(insert)
+        }catch{
+            print("Could not insert Nisse..")
+        }
+        
+        
+        do{
+            for user in try db!.prepare(users) {
+                print("id: \(user[id]), name: \(user[name]), email: \(user[email])")
+            // id: 1, name: Optional("Alice"), email: alice@mac.com
+            }
+        }catch{
+            print("Could not print users")
+        }
+        
+        
     }
 
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
