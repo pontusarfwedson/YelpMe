@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3883207EA859B1D4F67809570D4E2FE8376E2B76",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3883207EA859B1D4F67809570D4E2FE8376E2B76" : 9223372036854775807,
+    "3AE8ED2E684071AF4FB151FA51BF266B82FF45BD" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "74CAA2B7-174E-469C-BB14-10DE2D7F8195",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3883207EA859B1D4F67809570D4E2FE8376E2B76" : "YelpMe\/",
+    "3AE8ED2E684071AF4FB151FA51BF266B82FF45BD" : "YelpMe\/SQLite.swift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "YelpMe",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "YelpMe.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pontusarfwedson\/YelpMe.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3883207EA859B1D4F67809570D4E2FE8376E2B76"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/stephencelis\/SQLite.swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3AE8ED2E684071AF4FB151FA51BF266B82FF45BD"
+    }
+  ]
+}
