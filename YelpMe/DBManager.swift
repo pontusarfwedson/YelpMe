@@ -65,4 +65,36 @@ class DBManager{
         
         
     }
+    
+    static func returnUserNames() -> [String]{
+        var usernames = [String]()
+        let users = Table("users")
+        let name = Expression<String?>("name")
+        let path = NSSearchPathForDirectoriesInDomains(
+            .documentDirectory, .userDomainMask, true
+            ).first!
+        
+        
+        var db : Connection?
+        do{
+            print("Connecting to DB...")
+            db = try Connection("\(path)/db.sqlite3")
+        }catch{
+            print("Could not connect to DB")
+        }
+        
+        do{
+            for user in try db!.prepare(users) {
+                usernames.append(user[name]!)
+                // id: 1, name: Optional("Alice"), email: alice@mac.com
+            }
+            for name in usernames{
+                print(name)
+            }
+        }catch{
+            print("Could not print users")
+        }
+        
+        return usernames
+    }
 }
