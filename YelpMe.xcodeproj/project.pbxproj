@@ -263,6 +263,7 @@
 				TargetAttributes = {
 					3F6E9BF61DD3D112004E8D5E = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = TGV4D8269R;
 						ProvisioningStyle = Automatic;
 					};
 					3F6E9C0C1DD3D113004E8D5E = {
@@ -541,6 +542,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TGV4D8269R;
 				INFOPLIST_FILE = YelpMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pontusandmartin.com.YelpMe;
@@ -553,6 +555,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TGV4D8269R;
 				INFOPLIST_FILE = YelpMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pontusandmartin.com.YelpMe;
@@ -634,6 +637,7 @@
 				3F6E9C231DD3D113004E8D5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F6E9C241DD3D113004E8D5E /* Build configuration list for PBXNativeTarget "YelpMeTests" */ = {
 			isa = XCConfigurationList;
@@ -642,6 +646,7 @@
 				3F6E9C261DD3D113004E8D5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F6E9C271DD3D113004E8D5E /* Build configuration list for PBXNativeTarget "YelpMeUITests" */ = {
 			isa = XCConfigurationList;
@@ -650,6 +655,7 @@
 				3F6E9C291DD3D113004E8D5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
