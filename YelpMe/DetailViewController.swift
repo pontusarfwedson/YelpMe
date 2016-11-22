@@ -13,7 +13,7 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
-
+    //testing commmit to new branch
     func configureView() {
         // Update the user interface for the detail item.
         if let detail = self.detailItem {
@@ -34,7 +34,7 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    var detailItem: NSDate? {
+    var detailItem: String? {
         didSet {
             // Update the view.
             self.configureView()
